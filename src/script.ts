@@ -4,7 +4,7 @@ const colorCode = document.getElementById("colorCode") as HTMLElement;
 const copyButton = document.getElementById("copyButton") as HTMLButtonElement;
 const generateColorBtn = document.getElementById("generateColorBtn") as HTMLElement;
 const popup = document.getElementById("successPopup") as HTMLElement
-const btnIcon = document.querySelector("i");
+const btnIcon = document.querySelector("i") as HTMLElement;
 
 // ======== Step 2 ====== generateColor RGB Color
 const generateColor = () => {

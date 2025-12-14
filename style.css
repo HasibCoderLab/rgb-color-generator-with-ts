@@ -1,0 +1,194 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+#colorBox {
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    margin: 0 auto 20px;
+    border: 2px solid #ccc;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; */
+}
+
+#colorCode {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 1rem;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#generateColorBtn {
+    background-color: #007bff;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#generateColorBtn:hover {
+    background-color: #0056b3;
+}
+
+#copyButton {
+    background-color: #28a745;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#copyButton:hover {
+    background-color: #1e7e34;
+}
+
+/* #copyButton i {
+    transition: transform 0.2s ease;
+} */
+
+
+/* Success Popup */
+.popup {
+    position: fixed;
+    top: 20px;
+    right: -350px;
+    background: #0abf30;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000;
+    transition: right 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.popup.show {
+    right: 20px;
+    opacity: 1;
+}
+
+.popup i {
+    font-size: 22px;
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup-content p {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Contact With Me Section */
+.social-links {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.social-links p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    background-color: #f3f3f3;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    color: #333;
+}
+
+.link img {
+    width: 22px;
+    height: 22px;
+}
+
+.link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific platform colors */
+.portfolio {
+    background-color: #cce7ff;
+    color: #0073e6;
+}
+
+.github {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.linkedin {
+    background-color: #e6f0fa;
+    color: #0077b5;
+}
+
+.facebook {
+    background-color: #e8f4ff;
+    color: #1877f2;
+}
+
+.instagram {
+    background-color: #fde2e4;
+    color: #c32aa3;
+}
+
+.twitter {
+    background-color: #e8f5fd;
+    color: #1da1f2;
+}
+
+.youtube {
+    background-color: #ffe5e5;
+    color: #ff0000;
+}
+
+/* responsive for small screens */
+@media (max-width: 600px) {
+    .links {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
